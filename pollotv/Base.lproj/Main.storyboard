@@ -51,8 +51,14 @@
                     <view key="view" contentMode="scaleToFill" id="3tu-Jr-eYX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="INICIO (1)" translatesAutoresizingMaskIntoConstraints="NO" id="QPI-CQ-ztv">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="r5c-d7-EE0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.096408851444721222" green="0.11733952909708023" blue="0.33191627264022827" alpha="0.968017578125" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3T-IZ-mkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -189,7 +195,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="eye.fill" catalog="system" title=""/>
                                 <connections>
-                                    <action selector="ojito:" destination="IrC-x7-fNQ" eventType="touchUpInside" id="c4u-EN-iCE"/>
+                                    <action selector="Ojo:" destination="IrC-x7-fNQ" eventType="touchUpInside" id="qbx-oq-g1t"/>
+                                    <action selector="botonLogin:" destination="IrC-x7-fNQ" eventType="touchUpInside" id="alg-ac-tSP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -200,7 +207,6 @@
                         <outlet property="BotonEntrar" destination="jyl-kl-Xff" id="GAA-8J-lZQ"/>
                         <outlet property="Contraseña" destination="PHz-7d-Fxp" id="GSw-mc-Tkt"/>
                         <outlet property="Usuario" destination="MHG-Fa-AEp" id="N1N-QX-Hjl"/>
-                        <outlet property="ojito" destination="q8U-Lg-v8u" id="BI8-IL-cYq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qvg-bd-Fw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -354,6 +360,7 @@
     <resources>
         <image name="Botones (3)" width="132" height="53"/>
         <image name="CAMPO DE TEXTO" width="227" height="52"/>
+        <image name="INICIO (1)" width="393" height="852"/>
         <image name="LOGIN" width="393" height="852"/>
         <image name="USER" width="393" height="852"/>
         <image name="Vector" width="55" height="36"/>
