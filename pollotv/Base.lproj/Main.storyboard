@@ -80,6 +80,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBj-VG-tdM">
+                                <rect key="frame" x="83" y="257" width="154" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbI-Wi-gol">
+                                <rect key="frame" x="93" y="267" width="154" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss8-id-wzO">
+                                <rect key="frame" x="93" y="445" width="154" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EUd-ZI-URn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rD6-8u-sg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2236" y="-263"/>
+            <point key="canvasLocation" x="2235.8778625954196" y="-263.38028169014086"/>
         </scene>
         <!--Info Projects View Controller-->
         <scene sceneID="HtY-vN-WKj">
@@ -685,7 +703,7 @@
         <image name="BOHEMIAN 1" width="393" height="852"/>
         <image name="Botones (3)" width="132" height="53"/>
         <image name="CAMPO DE TEXTO" width="227" height="52"/>
-        <image name="CASITA" width="393" height="852"/>
+        <image name="CASITA" width="36" height="37"/>
         <image name="CASTROLI" width="393" height="852"/>
         <image name="CUMPLEAÑOS" width="393" height="852"/>
         <image name="EXPERIENCIA" width="393" height="852"/>
