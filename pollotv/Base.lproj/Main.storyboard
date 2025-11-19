@@ -27,6 +27,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="registro">
                                     <color key="baseForegroundColor" red="0.49803921579999999" green="0.76862752440000004" blue="0.3803921938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dZ5-Pn-gxG" kind="presentation" modalPresentationStyle="fullScreen" id="aMM-Rl-mVM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10g-i3-Jzn">
                                 <rect key="frame" x="98" y="436" width="196" height="73"/>
@@ -34,6 +37,9 @@
                                 <color key="tintColor" red="0.93725490570000003" green="0.52941179279999995" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="inicio"/>
+                                <connections>
+                                    <segue destination="IrC-x7-fNQ" kind="presentation" modalPresentationStyle="fullScreen" id="oF3-ev-9HD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -193,7 +199,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.93725490570000003" green="0.52941179279999995" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="eye.fill" catalog="system" title=""/>
+                                <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system" title=""/>
                                 <connections>
                                     <action selector="Ojo:" destination="IrC-x7-fNQ" eventType="touchUpInside" id="qbx-oq-g1t"/>
                                     <action selector="botonLogin:" destination="IrC-x7-fNQ" eventType="touchUpInside" id="alg-ac-tSP"/>
@@ -207,6 +213,8 @@
                         <outlet property="BotonEntrar" destination="jyl-kl-Xff" id="GAA-8J-lZQ"/>
                         <outlet property="Contraseña" destination="PHz-7d-Fxp" id="GSw-mc-Tkt"/>
                         <outlet property="Usuario" destination="MHG-Fa-AEp" id="N1N-QX-Hjl"/>
+                        <outlet property="ojito" destination="q8U-Lg-v8u" id="dcc-Mn-KTb"/>
+                        <segue destination="0My-tu-Xu7" kind="presentation" identifier="Inicio" modalPresentationStyle="fullScreen" id="v9M-3b-nZ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qvg-bd-Fw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -228,10 +236,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="USER" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-Cp-MfK">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="bezel" placeholder="CONTRASEÑA" textAlignment="center" minimumFontSize="17" background="CAMPO DE TEXTO" translatesAutoresizingMaskIntoConstraints="NO" id="wvV-3n-htt">
                                 <rect key="frame" x="76" y="445" width="240" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -296,6 +300,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Botones (3)" title=""/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="USER" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-Cp-MfK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M9T-4v-0jk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -355,7 +363,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nw9-wD-GYm"/>
+        <segue reference="qOx-ZO-60f"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Botones (3)" width="132" height="53"/>
@@ -364,7 +372,7 @@
         <image name="LOGIN" width="393" height="852"/>
         <image name="USER" width="393" height="852"/>
         <image name="Vector" width="55" height="36"/>
-        <image name="eye.fill" catalog="system" width="128" height="80"/>
+        <image name="eye.slash" catalog="system" width="128" height="97"/>
         <image name="usuario" width="25" height="25.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

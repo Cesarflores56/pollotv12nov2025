@@ -8,18 +8,14 @@
 import UIKit
 var nombreGlobal = ""
 var posicionarregloGlobal = 0
-var arreglonombre: [String] = ["Jaimito", "Alfredo", "Juanito"]
-var arregloapellido: [String] = ["Torres", "Gomez", "Perez"]
-var arreglocodigo: [String] = ["1234", "5678", "9012"]
-var arreglocorreo: [String] = ["jaimito@gmail.com", "alfredo@gmail.com", "juanito@gmail.com"]
+var arreglonombre: [String] = ["cesar", "fatima", "michelle"]
+var arreglocorreo: [String] = ["cesar@gmail.com", "fatima@gmail.com", "michelle@gmail.com"]
 var arreglocontraseña: [String] = ["1234", "5678", "9012"]
-var arreglocarrera: [String] = ["DATI", "COMP", "DCI"]
-var arreglopermiso: [String] = ["admin", "usuario", "usuario"]
+var arreglopermiso: [String] = ["usuario", "usuario", "usuario"]
 class inicioSesionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print ("prueba")
         // Do any additional setup after loading the view.
     }
     
@@ -38,7 +34,7 @@ class inicioSesionViewController: UIViewController {
         if (verificadorArreglos()){
             
             if (arreglopermiso[posicionarregloGlobal] == "usuario"){
-                self.performSegue(withIdentifier: "entraste", sender: InicioViewController.self)
+                self.performSegue(withIdentifier: "Inicio", sender: InicioViewController.self)
                 
             }else{
                 if (intetos >= 3 ){ displayErrorsegundo()
@@ -54,13 +50,13 @@ class inicioSesionViewController: UIViewController {
                 cuentaUsuaruio = Usuario.text ?? ""
                 cuentaContraseña = Contraseña.text ?? ""
                 
-                if (cuentaUsuaruio == "gordo" && cuentaContraseña == "12345"){
+                if (cuentaUsuaruio == "cesar@gmail.com" && cuentaContraseña == "1234"){
                     validar = true
-                    nombreGlobal = "Gordo"
+                    nombreGlobal = "Cesar"
                     
-                } else if(cuentaUsuaruio == "jaimito" && cuentaContraseña == "54321"){
+                } else if(cuentaUsuaruio == "fatima@gmail.com" && cuentaContraseña == "5678"){
                     validar = true
-                    nombreGlobal = "Jaimito"
+                    nombreGlobal = "Fatima"
                     
                 }
                 
@@ -73,8 +69,8 @@ class inicioSesionViewController: UIViewController {
         cuentaUsuaruio = Usuario.text ?? ""
         cuentaContraseña = Contraseña.text ?? ""
         var contador = 0
-        while (contador < arreglocodigo.count){
-            if (arreglocodigo[contador] == cuentaUsuaruio && arreglocontraseña[contador] == cuentaContraseña){
+        while (contador < arreglocorreo.count){
+            if (arreglocorreo[contador] == cuentaUsuaruio && arreglocontraseña[contador] == cuentaContraseña){
                 validar = true
                 posicionarregloGlobal = contador
                 break
